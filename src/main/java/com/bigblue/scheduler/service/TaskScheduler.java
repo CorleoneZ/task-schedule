@@ -11,7 +11,7 @@ import java.util.Map;
  */
 public interface TaskScheduler {
 
-    String parseTaskAndSchedule(JsonContent jsonContent);
+    String parseTasksAndSchedule(JsonContent jsonContent);
 
     //组装Tasks
     String startNodeTasks(String jobId, Map<String, NodeTask> nodeTasks, TaskListener statusListener) throws RuntimeException;
@@ -20,6 +20,6 @@ public interface TaskScheduler {
     void startTaskSchedule(String taskId);
 
     //取消调度
-    void cancelTaskScheduler(String taskId, TaskStatus taskStatus);
+    void cancelTaskSchedule(String taskId, TaskStatus taskStatus);
 
 }

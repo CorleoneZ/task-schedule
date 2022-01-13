@@ -58,7 +58,7 @@ public class ParentTask {
     }
 
     //Task是否失败或完成
-    public boolean isFailFinish() {
+    public boolean isFailOrFinish() {
         return nodeTaskSuccCnt.get() == nodeTasks.size() || parentTaskStatus == TaskStatus.fail;
     }
 

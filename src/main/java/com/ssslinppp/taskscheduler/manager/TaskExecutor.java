@@ -97,7 +97,7 @@ enum TaskExecutor {
         for (NodeTask nodeTask : noDependentNodeTasks) {
             TaskManager.instance.updateNodeTaskStatus(parentTaskId, nodeTask.getId(), NodeTaskStatus.running);
             ListenableFuture future = pool.submit(nodeTask);
-            Futures.addCallback(future, new NodeTaskExecCallback(parentTaskId, nodeTask.getId()));
+            //Futures.addCallback(future, new NodeTaskExecCallback(parentTaskId, nodeTask.getId()));
         }
     }
 
@@ -137,7 +137,7 @@ enum TaskExecutor {
                             break;
                         }
                         ListenableFuture future = pool.submit(nodeTask);
-                        Futures.addCallback(future, new NodeTaskExecCallback(parentTaskId, nodeTask.getId()));
+                        //Futures.addCallback(future, new NodeTaskExecCallback(parentTaskId, nodeTask.getId()));
                     }
                 }
             } catch (InterruptedException e) {

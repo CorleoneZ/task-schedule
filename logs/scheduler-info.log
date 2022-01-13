@@ -1,0 +1,105 @@
+2022-01-13 11:08:13.572 [main] INFO  com.bigblue.scheduler.SchedulerApplication - Starting SchedulerApplication on bogon with PID 72441 (/Users/truster/IdeaProjects/task-scheduler/target/classes started by truster in /Users/truster/IdeaProjects/task-scheduler)
+2022-01-13 11:08:13.578 [main] INFO  com.bigblue.scheduler.SchedulerApplication - The following profiles are active: param,dev
+2022-01-13 11:08:13.835 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@399f45b1: startup date [Thu Jan 13 11:08:13 CST 2022]; root of context hierarchy
+2022-01-13 11:08:14.700 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2022-01-13 11:08:16.476 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8085 (http)
+2022-01-13 11:08:16.497 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-01-13 11:08:16.498 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.27
+2022-01-13 11:08:16.650 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-01-13 11:08:16.651 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2816 ms
+2022-01-13 11:08:16.991 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2022-01-13 11:08:16.999 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2022-01-13 11:08:17.002 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2022-01-13 11:08:17.002 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2022-01-13 11:08:17.002 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2022-01-13 11:08:17.798 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@399f45b1: startup date [Thu Jan 13 11:08:13 CST 2022]; root of context hierarchy
+2022-01-13 11:08:17.936 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/invoke],methods=[POST]}" onto public java.lang.Object com.bigblue.scheduler.test.TaskScheduleTests.invoke(com.bigblue.scheduler.domain.json.JsonContent)
+2022-01-13 11:08:17.938 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/progress],methods=[GET]}" onto public java.lang.Object com.bigblue.scheduler.test.TaskScheduleTests.getProgress(java.lang.String)
+2022-01-13 11:08:17.939 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test2],methods=[GET]}" onto public void com.bigblue.scheduler.test.TaskScheduleTests.test2()
+2022-01-13 11:08:17.939 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test1],methods=[GET]}" onto public void com.bigblue.scheduler.test.TaskScheduleTests.test1()
+2022-01-13 11:08:17.947 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2022-01-13 11:08:17.948 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2022-01-13 11:08:17.995 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-01-13 11:08:17.995 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-01-13 11:08:18.057 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-01-13 11:08:18.565 [main] INFO  o.s.w.s.server.standard.ServerEndpointExporter - Registering @ServerEndpoint class: class com.bigblue.scheduler.base.websocket.WebSocketController
+2022-01-13 11:08:18.626 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2022-01-13 11:08:18.714 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2022-01-13 11:08:18.815 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2022-01-13 11:08:18.841 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2022-01-13 11:08:18.871 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8085 (http)
+2022-01-13 11:08:18.896 [main] INFO  com.bigblue.scheduler.SchedulerApplication - Started SchedulerApplication in 6.683 seconds (JVM running for 7.539)
+2022-01-13 11:08:51.517 [Thread-3] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@399f45b1: startup date [Thu Jan 13 11:08:13 CST 2022]; root of context hierarchy
+2022-01-13 11:08:51.544 [Thread-3] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2022-01-13 11:20:07.478 [main] INFO  com.bigblue.scheduler.SchedulerApplication - Starting SchedulerApplication on bogon with PID 72612 (/Users/truster/IdeaProjects/task-scheduler/target/classes started by truster in /Users/truster/IdeaProjects/task-scheduler)
+2022-01-13 11:20:07.484 [main] INFO  com.bigblue.scheduler.SchedulerApplication - The following profiles are active: param,dev
+2022-01-13 11:20:07.668 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@399f45b1: startup date [Thu Jan 13 11:20:07 CST 2022]; root of context hierarchy
+2022-01-13 11:20:08.324 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2022-01-13 11:20:10.383 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8085 (http)
+2022-01-13 11:20:10.411 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-01-13 11:20:10.413 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.27
+2022-01-13 11:20:10.623 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-01-13 11:20:10.626 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2958 ms
+2022-01-13 11:20:11.020 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2022-01-13 11:20:11.036 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2022-01-13 11:20:11.039 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2022-01-13 11:20:11.039 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2022-01-13 11:20:11.039 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2022-01-13 11:20:12.061 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@399f45b1: startup date [Thu Jan 13 11:20:07 CST 2022]; root of context hierarchy
+2022-01-13 11:20:12.231 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/invoke],methods=[POST]}" onto public java.lang.Object com.bigblue.scheduler.test.TaskScheduleTests.invoke(com.bigblue.scheduler.domain.json.JsonContent)
+2022-01-13 11:20:12.233 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test1],methods=[GET]}" onto public void com.bigblue.scheduler.test.TaskScheduleTests.test1()
+2022-01-13 11:20:12.233 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test2],methods=[GET]}" onto public void com.bigblue.scheduler.test.TaskScheduleTests.test2()
+2022-01-13 11:20:12.233 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/progress],methods=[GET]}" onto public java.lang.Object com.bigblue.scheduler.test.TaskScheduleTests.getProgress(java.lang.String)
+2022-01-13 11:20:12.238 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2022-01-13 11:20:12.238 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2022-01-13 11:20:12.279 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-01-13 11:20:12.282 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-01-13 11:20:12.403 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-01-13 11:20:13.055 [main] INFO  o.s.w.s.server.standard.ServerEndpointExporter - Registering @ServerEndpoint class: class com.bigblue.scheduler.base.websocket.WebSocketController
+2022-01-13 11:20:13.121 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2022-01-13 11:20:13.196 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2022-01-13 11:20:13.266 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2022-01-13 11:20:13.314 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2022-01-13 11:20:13.348 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8085 (http)
+2022-01-13 11:20:13.367 [main] INFO  com.bigblue.scheduler.SchedulerApplication - Started SchedulerApplication in 7.206 seconds (JVM running for 8.309)
+2022-01-13 11:21:20.977 [http-nio-8085-exec-4] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2022-01-13 11:21:20.979 [http-nio-8085-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2022-01-13 11:21:21.033 [http-nio-8085-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 54 ms
+2022-01-13 11:43:45.739 [Thread-3] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@399f45b1: startup date [Thu Jan 13 11:20:07 CST 2022]; root of context hierarchy
+2022-01-13 11:43:45.772 [Thread-3] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2022-01-13 11:46:38.553 [main] INFO  com.bigblue.scheduler.SchedulerApplication - Starting SchedulerApplication on bogon with PID 73083 (/Users/truster/IdeaProjects/task-scheduler/target/classes started by truster in /Users/truster/IdeaProjects/task-scheduler)
+2022-01-13 11:46:38.556 [main] INFO  com.bigblue.scheduler.SchedulerApplication - The following profiles are active: param,dev
+2022-01-13 11:46:38.665 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@399f45b1: startup date [Thu Jan 13 11:46:38 CST 2022]; root of context hierarchy
+2022-01-13 11:46:39.123 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2022-01-13 11:46:40.677 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8085 (http)
+2022-01-13 11:46:40.700 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-01-13 11:46:40.701 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.27
+2022-01-13 11:46:40.810 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-01-13 11:46:40.810 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2147 ms
+2022-01-13 11:46:41.025 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2022-01-13 11:46:41.030 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2022-01-13 11:46:41.031 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2022-01-13 11:46:41.031 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2022-01-13 11:46:41.031 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2022-01-13 11:46:41.660 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@399f45b1: startup date [Thu Jan 13 11:46:38 CST 2022]; root of context hierarchy
+2022-01-13 11:46:41.791 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/invoke],methods=[POST]}" onto public java.lang.Object com.bigblue.scheduler.test.TaskScheduleTests.invoke(com.bigblue.scheduler.domain.json.JsonContent)
+2022-01-13 11:46:41.792 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/progress],methods=[GET]}" onto public java.lang.Object com.bigblue.scheduler.test.TaskScheduleTests.getProgress(java.lang.String)
+2022-01-13 11:46:41.792 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test1],methods=[GET]}" onto public void com.bigblue.scheduler.test.TaskScheduleTests.test1()
+2022-01-13 11:46:41.793 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test2],methods=[GET]}" onto public void com.bigblue.scheduler.test.TaskScheduleTests.test2()
+2022-01-13 11:46:41.807 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2022-01-13 11:46:41.807 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2022-01-13 11:46:41.850 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-01-13 11:46:41.851 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-01-13 11:46:42.009 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-01-13 11:46:42.560 [main] INFO  o.s.w.s.server.standard.ServerEndpointExporter - Registering @ServerEndpoint class: class com.bigblue.scheduler.base.websocket.WebSocketController
+2022-01-13 11:46:42.627 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2022-01-13 11:46:42.693 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2022-01-13 11:46:42.724 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2022-01-13 11:46:42.743 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2022-01-13 11:46:42.765 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8085 (http)
+2022-01-13 11:46:42.787 [main] INFO  com.bigblue.scheduler.SchedulerApplication - Started SchedulerApplication in 5.341 seconds (JVM running for 6.233)
+2022-01-13 11:46:47.563 [http-nio-8085-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2022-01-13 11:46:47.565 [http-nio-8085-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2022-01-13 11:46:47.609 [http-nio-8085-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 44 ms
+2022-01-13 11:48:36.267 [Thread-3] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@399f45b1: startup date [Thu Jan 13 11:46:38 CST 2022]; root of context hierarchy
+2022-01-13 11:48:36.310 [Thread-3] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
